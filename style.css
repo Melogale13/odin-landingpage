@@ -1,6 +1,21 @@
-/*.header{
+* { 
+    border: solid 3px blue;
+    padding: 1vw;
+}
+
+.hero, .footer{
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
+
+.hero-top, .hero-bot{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
