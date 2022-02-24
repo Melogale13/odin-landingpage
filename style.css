@@ -1,6 +1,21 @@
-* { 
-    border: solid 3px blue;
-    padding: 1vw;
+/* { 
+    border: solid 1px blue;
+    padding: 0.2vw;
+}*/
+
+body{
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    
+    
+}
+
+.hero, .section1, .section2, .section3, .footer{
+    padding: 0 15vw 0 15vw;*/
+    border: solid 2px blue;
+    
 }
 
 .hero, .footer{
@@ -12,6 +27,57 @@
 
 .hero-top, .hero-bot{
     display: flex;
+    align-items: center;
+   
+}
+
+.hero-bot{
+    margin: 100px 0;
+}
+
+
+.hero-logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-links{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.hero-main-left{
+    width: 50%;
+}
+
+.hero-main-right{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-txt{
+}
+
+.hero-main-txt{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero-scnd-txt, .hero-links {
+    font-size: 18px;
+    color: #E5E7EB;
+
+}
+ul{
+    list-style-type: none;
 }
 
 a{
@@ -19,3 +85,73 @@ a{
     color: #F9FAF8;
 }
 
+.section1-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    border: solid 3px rebeccapurple;
+}
+
+.section1-captions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.caption1, .caption2, .caption3, .caption4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    border: solid 2px blue;
+    border-radius: 10px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+   
+}
+
+.section2-quote{
+    font-style: italic;
+
+}
+
+
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct3-bluebox{
+    display: flex;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: #3882F6;
+    color: white;
+    justify-content: center;
+}
+
+.bluebox-title{
+    font-weight: bold;
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+}
