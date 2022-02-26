@@ -4,18 +4,22 @@
 }*/
 
 body{
-    font-family: "Roboto";
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space;
-    
-    
+    justify-content: space-between; 
+    align-items: space-between; 
 }
 
 .hero, .section1, .section2, .section3, .footer{
-    padding: 0 15vw 0 15vw;*/
-    border: solid 2px blue;
-    
+    padding: 0vw 15vw 0vw 15vw;
+    /*border: solid 2px blue;*/
+    flex: 1; 
+}
+
+.hero, .section1, .section2, .section3 {
+    margin-bottom: 1vw;
 }
 
 .hero, .footer{
@@ -23,16 +27,18 @@ body{
     color: #F9FAF8;
     display: flex;
     flex-direction: column;
+    flex: 0 1 auto;
 }
 
 .hero-top, .hero-bot{
     display: flex;
     align-items: center;
-   
+    flex-shrink: 0;
 }
 
 .hero-bot{
-    margin: 100px 0;
+    display: flex;
+    padding: 100px 0;
 }
 
 
@@ -52,17 +58,34 @@ body{
 }
 
 .hero-main-left{
+    display: flex;
+    flex-direction: column;
     width: 50%;
+
+}
+
+button{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin: 10px 0;
+    border: none;
+    font-weight: bold;
 }
 
 .hero-main-right{
-    width: 50%; 
     display: flex;
+    width: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: grey;
 }
 
 .placeholder-txt{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hero-main-txt{
@@ -71,16 +94,16 @@ body{
     color: #F9FAF8;
 }
 
-.hero-scnd-txt, .hero-links {
+.hero-scnd-txt, .hero-links{
     font-size: 18px;
     color: #E5E7EB;
-
 }
-ul{
+
+ul {
     list-style-type: none;
 }
 
-a{
+a { 
     text-decoration: none;
     color: #F9FAF8;
 }
@@ -91,13 +114,13 @@ a{
     font-weight: bolder;
     display: flex;
     justify-content: center;
-    border: solid 3px rebeccapurple;
+    margin: 40px;
 }
 
 .section1-captions {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .caption1, .caption2, .caption3, .caption4{
@@ -105,7 +128,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 150px;
     text-align: center;
 }
 
@@ -120,14 +143,19 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: #E5E7EB;
-   
 }
 
 .section2-quote{
     font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+}
 
+.quote-author{
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -141,17 +169,31 @@ a{
 .sct3-bluebox{
     display: flex;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 30px 80px;
     background-color: #3882F6;
     color: white;
-    justify-content: center;
+    justify-content: space-between;
+    border: solid 5px salmon;
 }
 
 .bluebox-title{
+    display: flex;
+    flex: 0;
     font-weight: bold;
+    border: solid 3px blue;
+}
+
+.blue-box-subtext{
+    font-size: 12px;
+}
+
+.blue-box-button{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer{
     justify-content: center;
     align-items: center;
+    min-height: 50px;
 }
